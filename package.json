@@ -1,0 +1,49 @@
+{
+  "name": "bs-react-stepper",
+  "version": "0.0.10",
+  "description": "Reason bindings for bs-react-stepper",
+  "main": "/lib/js/src/HorizontalStepper.js",
+  "keywords": ["react", "react-component", "reason-react", "bucklescript"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgelima/bs-react-stepper.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/georgelima/bs-react-stepper/issues"
+  },
+  "homepage": "https://github.com/georgelima/bs-react-stepper/readme",
+  "scripts": {
+    "precommit": "lint-staged",
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn run clean && yarn run build",
+    "release": "yarn run prepare && release-it",
+    "format": "prettier --write ./*.{js,json} ./**/*.{js,json}"
+  },
+  "author": "George Lima <georgelima11@hotmail.com>",
+  "contributors": ["George Lima <georgelima11@hotmail.com>"],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "2.1.0",
+    "husky": "0.14.3",
+    "lint-staged": "6.0.0",
+    "prettier": "1.9.2",
+    "reason-react": "0.3.0",
+    "release-it": "^5.1.2"
+  },
+  "peerDependencies": {
+    "reason-react": "0.3.0"
+  },
+  "lint-staged": {
+    "*.{js,json}": ["prettier --write", "git add"],
+    "src/**/*.re": ["refmt --in-place", "git add"]
+  },
+  "dependencies": {
+    "react-stepper-horizontal": "^1.0.10"
+  }
+}
