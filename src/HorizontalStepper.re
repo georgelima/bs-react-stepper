@@ -1,9 +1,71 @@
 [@bs.module "react-stepper-horizontal"]
 external reactClass : ReasonReact.reactClass = "default";
 
-let make = (~steps, ~activeStep, _children) =>
+let make =
+    (
+      ~steps,
+      ~activeStep,
+      ~activeColor=?,
+      ~completeColor=?,
+      ~defaultColor=?,
+      ~activeTitleColor=?,
+      ~completeTitleColor=?,
+      ~defaultTitleColor=?,
+      ~circleFontColor=?,
+      ~size=?,
+      ~circleFontSize=?,
+      ~titleFontSize=?,
+      ~circleTop=?,
+      ~titleTop=?,
+      ~defaultOpacity=?,
+      ~completeOpacity=?,
+      ~activeOpacity=?,
+      ~defaultTitleOpacity=?,
+      ~completeTitleOpacity=?,
+      ~activeTitleOpacity=?,
+      ~barStyle=?,
+      ~defaultBorderColor=?,
+      ~completeBorderColor=?,
+      ~activeBorderColor=?,
+      ~defaultBorderStyle=?,
+      ~completeBorderStyle=?,
+      ~activeBorderStyle=?,
+      ~defaultBarColor=?,
+      ~completeBarColor=?,
+      _children
+    ) =>
   ReasonReact.wrapJsForReason(
     ~reactClass,
-    ~props={"activeStep": activeStep, "steps": steps},
+    ~props={
+      "activeStep": activeStep,
+      "steps": steps,
+      "activeColor": activeColor,
+      "completeColor": completeColor,
+      "defaultColor": defaultColor,
+      "activeTitleColor": activeTitleColor,
+      "completeTitleColor": completeTitleColor,
+      "defaultTitleColor": defaultTitleColor,
+      "circleFontColor": circleFontColor,
+      "size": size,
+      "circleFontSize": circleFontSize,
+      "titleFontSize": titleFontSize,
+      "circleTop": circleTop,
+      "titleTop": titleTop,
+      "defaultOpacity": defaultOpacity,
+      "completeOpacity": completeOpacity,
+      "activeOpacity": activeOpacity,
+      "defaultTitleOpacity": defaultTitleOpacity,
+      "completeTitleOpacity": completeTitleOpacity,
+      "activeTitleOpacity": activeTitleOpacity,
+      "barStyle": barStyle,
+      "defaultBarColor": defaultBarColor,
+      "defaultBorderColor": defaultBorderColor,
+      "completeBorderColor": completeBorderColor,
+      "activeBorderColor": activeBorderColor,
+      "defaultBorderStyle": defaultBorderStyle,
+      "completeBorderStyle": completeBorderStyle,
+      "activeBorderStyle": activeBorderStyle,
+      "completeBarColor": completeBarColor
+    },
     [||]
   );
