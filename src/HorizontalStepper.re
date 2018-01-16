@@ -35,6 +35,9 @@ let make =
       ~activeCircleFontColor="#000",
       ~defaultCircleFontColor="#000",
       ~checkIcon=ReasonReact.nullElement,
+      ~titleStyle=?,
+      ~circleStyle=?,
+      ~barHeight=1,
       _children
     ) =>
   ReasonReact.wrapJsForReason(
@@ -71,7 +74,10 @@ let make =
       "completeBarColor": completeBarColor,
       "activeCircleFontColor": activeCircleFontColor,
       "checkIcon": checkIcon,
-      "defaultCircleFontColor": defaultCircleFontColor
+      "defaultCircleFontColor": defaultCircleFontColor,
+      "titleStyle": titleStyle,
+      "circleStyle": circleStyle,
+      "barHeight": barHeight
     },
     [||]
   );
