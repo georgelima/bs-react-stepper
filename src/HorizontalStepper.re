@@ -33,6 +33,7 @@ let make =
       ~defaultBarColor="#E0E0E0",
       ~completeBarColor="#E0E0E0",
       ~activeCircleFontColor="#000",
+      ~defaultCircleFontColor="#000",
       ~checkIcon=ReasonReact.nullElement,
       _children
     ) =>
@@ -69,7 +70,8 @@ let make =
       "activeBorderStyle": activeBorderStyle,
       "completeBarColor": completeBarColor,
       "activeCircleFontColor": activeCircleFontColor,
-      "checkIcon": checkIcon
+      "checkIcon": checkIcon,
+      "defaultCircleFontColor": defaultCircleFontColor
     },
     [||]
   );
