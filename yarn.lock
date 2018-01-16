@@ -2064,7 +2064,7 @@ react-dom@^15.3.2:
 
 "react-stepper-horizontal@https://github.com/georgelima/react-stepper":
   version "1.0.9"
-  resolved "https://github.com/georgelima/react-stepper#b7e2572dd5fc7849e71adfe8e57e36d59a6b6ae1"
+  resolved "https://github.com/georgelima/react-stepper#13189cdb88ba0ccb9837392cc88b8d25116778c8"
   dependencies:
     prop-types "^15.5.10"
     react "^15.3.2"

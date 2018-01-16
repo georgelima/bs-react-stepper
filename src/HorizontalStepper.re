@@ -35,8 +35,8 @@ let make =
       ~activeCircleFontColor="#000",
       ~defaultCircleFontColor="#000",
       ~checkIcon=ReasonReact.nullElement,
-      ~titleStyle=?,
-      ~circleStyle=?,
+      ~fontFamily="sans-serif",
+      ~circleCursor="pointer",
       ~barHeight=1,
       _children
     ) =>
@@ -75,8 +75,8 @@ let make =
       "activeCircleFontColor": activeCircleFontColor,
       "checkIcon": checkIcon,
       "defaultCircleFontColor": defaultCircleFontColor,
-      "titleStyle": titleStyle,
-      "circleStyle": circleStyle,
+      "fontFamily": fontFamily,
+      "circleCursor": circleCursor,
       "barHeight": barHeight
     },
     [||]
