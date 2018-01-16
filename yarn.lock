@@ -2062,9 +2062,9 @@ react-dom@^15.3.2:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-stepper-horizontal@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/react-stepper-horizontal/-/react-stepper-horizontal-1.0.10.tgz#e2c0832b89ee1dab0ad8d715f4f97039242fd0a8"
+"react-stepper-horizontal@https://github.com/georgelima/react-stepper":
+  version "1.0.9"
+  resolved "https://github.com/georgelima/react-stepper#cdc58a7b32ded45e94e44e6a7b2d0d4f495f89c9"
   dependencies:
     prop-types "^15.5.10"
     react "^15.3.2"

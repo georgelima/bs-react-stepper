@@ -44,6 +44,6 @@
     "src/**/*.re": ["refmt --in-place", "git add"]
   },
   "dependencies": {
-    "react-stepper-horizontal": "^1.0.10"
+    "react-stepper-horizontal": "https://github.com/georgelima/react-stepper"
   }
 }
